@@ -10,13 +10,13 @@ const municipios = require('../../controllers/municipios.controller')
 
 
 
-router.get('/', municipios.get)
+router.get('/', municipios.getMunicipios)
 
-router.get('/id', municipios.getById)
+router.get('/id', municipios.getMunicipioById)
 
-router.post('/create', municipios.create)
+router.post('/create', municipios.InsertMunicipio)
 
-router.put('/update', municipios.update)
+router.put('/update', municipios.UpdateMunicipio)
 
 
 

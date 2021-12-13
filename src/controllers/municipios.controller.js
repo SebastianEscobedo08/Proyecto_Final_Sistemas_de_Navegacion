@@ -6,7 +6,7 @@ const httpStatus = require('http-status')
 const Municipio = require('../models/municipio.model')
 
 
-exports.create = async (req, res, next) => {
+exports.InsertMunicipio = async (req, res, next) => {
   try {
 
     const body = req.body
@@ -23,7 +23,7 @@ exports.create = async (req, res, next) => {
 }
 
 
-exports.update = async (req, res, next) => {
+exports.UpdateMunicipio = async (req, res, next) => {
   try {
 
     const body = req.body
@@ -41,7 +41,7 @@ exports.update = async (req, res, next) => {
 }
 
 
-exports.getById = async (req, res, next) => {
+exports.getMunicipioById = async (req, res, next) => {
   const user = req.user
   try {
     const body = req.body
@@ -61,7 +61,7 @@ exports.getById = async (req, res, next) => {
 }
 
 
-exports.get = async (req, res, next) => {
+exports.getMunicipios = async (req, res, next) => {
   const user = req.user
   try {
 
